@@ -1,0 +1,302 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background-color: #97b7b5;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+span {
+	color: #c65238;
+}
+
+header {
+	border-bottom: 1px black solid;
+	
+}
+
+#cracks {
+	background-color: #491f17;
+	border-color: #491f17;
+}
+
+#leaks {
+	background-color: #6d2b24;
+	border-color: #6d2b24;
+}
+
+#roaches {
+	background-color: #994433;
+	border-color: #994433;
+}
+
+#asthma {
+	background-color: #c65238;
+	border-color: #c65238;
+}
+
+.title {
+	float: left;
+}
+
+.link {
+	float: right;
+	padding: 20px;
+	width: 32%;
+}
+
+.text {
+	text-align: right;
+	float: left;
+	line-height: 14px;
+	padding-right: 10px;
+	font-weight: 400;
+}
+
+.brand {
+	float: right;
+	padding-right: 15px;
+	margin-right: 15px;
+}
+
+.brand p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.brand_default {
+	font-family: "HelveticaNeue-CondensedBold", Arial Condensed, sans-serif;
+	font-weight: 500;
+	color: black;
+	font-size: 21px;
+	line-height: 10px;
+}
+
+.brand_light {
+	font-family: "HelveticaNeue-CondensedBold", Arial Condensed, sans-serif;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 21px;
+	line-height: 10px;
+}
+
+.brand a {
+	text-decoration: none;
+}
+
+.brand a:hover {
+	opacity: 0.5;
+}
+
+.content {
+	margin: 2%;
+	background: url("asthma.png") no-repeat;
+	background-size: contain;
+	height: 540px;
+	background-position: center;
+
+}
+
+.legend {
+	background: rgba(255, 255, 255, 0.3);
+	padding: 20px 0 20px 30px;
+	width: 50%;
+	border-radius: 15px;
+	height: 140px;
+}
+
+.legend_icons {
+	display: inline;
+}
+
+.legend_icons div {
+	width: 12%;
+	float: left;
+}
+
+.equation {
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.legend_text {
+	text-align: center;
+	font-weight: 400;
+	margin-top: 4px;
+	line-height: 14px;
+	color: black;
+	text-decoration: underline;
+}
+
+.legend_asthma {
+	width: 110px !important;
+	text-align: center
+}
+
+.small {
+	font-size: 12px;
+	color: black !important;
+}
+
+.footer {
+	border-top: 1px black solid;
+	padding-top: 10px;
+}
+
+.footer_link {
+	float: left;
+}
+
+.footer_link p {
+	font-weight: 400;
+}
+
+.logo {
+	float: right;
+	width: 100px;
+}
+
+.logo img {
+	max-width: 70%;
+}
+
+.btn {
+	font-weight: 300;
+	border-radius: 40px;
+}
+
+.btn-primary:hover {
+	opacity: 0.6;
+}
+
+.icon-cracks, .icon-leaks, .icon-roaches, .icon-asthma {
+	font-size: 40px;
+	color: white;	
+}
+
+.share-button {
+	margin-bottom: 3%;
+	margin-left: 45%;
+}
+
+.share-button.sharer-0 label span {
+	color: #333;
+	font-weight: 500 !important;
+}
+
+.share-button.sharer-0 label {
+	color: white;
+	background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.share-button.sharer-0 .social li[class*=pinterest], .share-button.sharer-0 .social li[class*=twitter], 
+.share-button.sharer-0 .social li[class*=facebook], .share-button.sharer-0 .social li[class*=gplus], 
+.share-button.sharer-0 .social li[class*=paper-plane]{
+	background: #97b7b5 !important;
+}
+
+ 
+
+@media only screen and (max-width : 991px) {
+	.legend {
+		width: 100%;
+	}
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.legend {
+		width: 100%;
+	}
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.container {
+		padding: 2px;
+	}
+
+	.legend {		
+		padding: 20px 0 20px 30px;
+		width: 100%;
+		height: 90px;
+	}
+
+	#cracks, .#leaks, #roaches, #asthma {
+		font-size: 50%;
+	}
+
+	.icon-leaks, .icon-cracks, .icon-roaches, .icon-asthma {
+		font-size: 18px;
+	}
+
+	.equation {
+		font-size: 70%;	
+	}
+
+	.legend_text {
+		font-size: 70%;	
+		line-height: 90%;
+	}
+
+	.legend_asthma {
+		width: 80px !important;
+	}
+
+	.small {
+		font-size: 8px;
+	}
+
+	h1 {
+		font-size: 24px;
+		font-weight: 300;
+	}
+
+	.content {
+		height: 300px;
+		margin-top: 10%;
+	}
+
+	.text {
+		font-size: 70%;
+		font-weight: 400;
+		line-height: 10px;
+		margin-left: 30%;
+	}
+
+	.brand_default, .brand_light {
+		font-size: 16px;
+		line-height: 4px;
+	}
+
+
+	.brand p {
+		font-size: 80%;
+	}
+
+	.logo img {
+		max-width: 50%;
+	}
+
+	.footer_link p {
+		font-size: 70%;
+	}
+
+	.share-button {
+		margin-bottom: 5%;
+		margin-left: 40%;
+	}
+
+	.share-button.sharer-0 label {
+		font-size: 12px !important;
+	}
+}
