@@ -1,0 +1,26 @@
+,,,,,Trends in Heat Stress Deaths - Number : Chart Over Time
+X axis title: Year
+Y axis title: Number 
+Indicator Name: Heat Stress Deaths
+Indicator Description: Heat Stress Deaths
+Indicator Measure: Number
+Indicator How Calculated: Count of deaths during months of May-September with ICD10 code of T67 as a contributing cause with underlying or other cause of death X30 (excluding any records with man-made source of heat W92) for NYC residents including homeless.
+Indicator Source(s): New York City Bureau of Vital Statistics (BVS)
+
+compare_type,line_label,x_value,y_value,geography_name,geography_id,
+Citywide,New York City,2013,25,New York City,1,
+Citywide,New York City,2012,8,New York City,1,
+Citywide,New York City,2011,34,New York City,1,
+Citywide,New York City,2010,11,New York City,1,
+Citywide,New York City,2009,2,New York City,1,
+Citywide,New York City,2008,10,New York City,1,
+Citywide,New York City,2007,1,New York City,1,
+Citywide,New York City,2006,50,New York City,1,
+Citywide,New York City,2005,7,New York City,1,
+Citywide,New York City,2004,1,New York City,1,
+Citywide,New York City,2003,6,New York City,1,
+
+NYC Department of Health and Mental Hygiene
+Environment & Health Data Portal
+More information can be found at: http://nyc.gov/health/tracking
+Accessed 06/30/2017

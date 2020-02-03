@@ -1,0 +1,38 @@
+,,,,,Trends in Heat Stress Hospitalizations - Age-Adjusted Rate : Chart Over Time
+X axis title: Year
+Y axis title: Age-Adjusted Rate (per 100000 residents)
+Indicator Name: Heat Stress Hospitalizations
+Indicator Description: Heat Stress Hospitalizations
+Indicator Measure: Age-Adjusted Rate
+Indicator How Calculated: NYC residents admitted to a NYC hospital during the months of May-Sep having an ICD-9 diagnosis code for effects of heat and light 992.0-992.9 or E-codes E900.0 or E900.9 for excessive heat due to weather conditions or undetermined cause. Must not have an E-code of E900.1 for excessive heat due to man-made conditions. Counts are summed by 5-year age groups and divided by the population in each age group using NYC DOHMH intercensal estimates; quotients are multiplied by the proportion of the 2000 US population in each age group.  Age-adjusted rate is the sum of the weighted age-specific rates; expressed as cases per 100000 residents.
+
+Indicator Source(s): United States Census
+
+compare_type,line_label,x_value,y_value,geography_name,geography_id,
+Citywide,New York City,2013,2.3,New York City,1,
+Citywide,New York City,2013,2.3,New York City,1,
+Citywide,New York City,2012,2.3,New York City,1,
+Citywide,New York City,2012,2.3,New York City,1,
+Citywide,New York City,2011,3.1,New York City,1,
+Citywide,New York City,2011,3.1,New York City,1,
+Citywide,New York City,2010,3.3,New York City,1,
+Citywide,New York City,2010,3.3,New York City,1,
+Citywide,New York City,2009,0.7,New York City,1,
+Citywide,New York City,2009,0.7,New York City,1,
+Citywide,New York City,2008,2,New York City,1,
+Citywide,New York City,2008,2,New York City,1,
+Citywide,New York City,2007,1.2,New York City,1,
+Citywide,New York City,2007,1.2,New York City,1,
+Citywide,New York City,2006,4.3,New York City,1,
+Citywide,New York City,2006,4.3,New York City,1,
+Citywide,New York City,2005,2.2,New York City,1,
+Citywide,New York City,2005,2.2,New York City,1,
+Citywide,New York City,2004,0.7,New York City,1,
+Citywide,New York City,2004,0.7,New York City,1,
+Citywide,New York City,2003,2,New York City,1,
+Citywide,New York City,2003,2,New York City,1,
+
+NYC Department of Health and Mental Hygiene
+Environment & Health Data Portal
+More information can be found at: http://nyc.gov/health/tracking
+Accessed 07/27/2017

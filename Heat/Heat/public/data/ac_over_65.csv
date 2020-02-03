@@ -1,0 +1,35 @@
+year_description,borough,geography_name,geography_id,data_value,notes
+2013,Bronx,Fordham - Bronx Pk,103,83.6,*
+2013,Bronx,Kingsbridge - Riverdale,101,94.9,*
+2013,Bronx,Northeast Bronx,102,93.7,*
+2013,Bronx,Pelham - Throgs Neck,104,92.6,
+2013,Bronx,South Bronx,105106107,70.4,*
+2013,Brooklyn,Bedford Stuyvesant - Crown Heights,203,90.6,*
+2013,Brooklyn,Bensonhurst - Bay Ridge,209,91.0,*
+2013,Brooklyn,Borough Park,206,75.7,*
+2013,Brooklyn,Canarsie - Flatlands,208,96.5,*
+2013,Brooklyn,Coney Island - Sheepshead Bay,210,94.8,
+2013,Brooklyn,Downtown - Heights - Slope,202,88.2,*
+2013,Brooklyn,East Flatbush - Flatbush,207,78.8,*
+2013,Brooklyn,East New York,204,93.3,*
+2013,Brooklyn,Greenpoint,201,84.8,*
+2013,Brooklyn,Sunset Park,205,69.0,*
+2013,Brooklyn,Williamsburg - Bushwick,211,79.2,*
+2013,Manhattan,Central Harlem - Morningside Heights,302,95.8,*
+2013,Manhattan,Chelsea-Village  ,306308,92.5,
+2013,Manhattan,East Harlem,303,76.8,*
+2013,Manhattan,Union Square-Lower Manhattan,309310,82.5,
+2013,Manhattan,Upper East Side-Gramercy,305307,91.1,
+2013,Manhattan,Upper West Side,304,96.5,
+2013,Manhattan,Washington Heights,301,73.7,*
+2013,Queens,Bayside Little Neck-Fresh Meadows,404406,81.1,*
+2013,Queens,Flushing - Clearview,403,92.5,
+2013,Queens,Jamaica,408,75.8,*
+2013,Queens,Long Island City - Astoria,401,97.4,*
+2013,Queens,Ridgewood - Forest Hills,405,92.1,
+2013,Queens,Rockaways,410,73.5,*
+2013,Queens,Southeast Queens,409,93.6,
+2013,Queens,Southwest Queens,407,90.7,*
+2013,Queens,West Queens,402,88.6,*
+2013,Staten Island,Northern SI,501502,96.2,
+2013,Staten Island,Southern SI,503504,96.9,

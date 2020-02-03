@@ -1,0 +1,41 @@
+,,,,,Trends in Heat Events - Two or More Days Reaching 95 Degrees or More : Chart Over Time
+X axis title: Year
+Y axis title: Two or More Days Reaching 95 Degrees or More 
+Indicator Name: Heat Events
+Indicator Description: Heat Events
+Indicator Measure: Two or More Days Reaching 95 Degrees or More
+Indicator How Calculated: Number of events per year with a maximum daily temperature or heat index of at least 95 degrees Fahrenheit for two consecutive days or longer measured at the LaGuardia Airport weather station.
+Indicator Source(s): National Weather Service
+
+compare_type,line_label,x_value,y_value,geography_name,geography_id,
+Citywide,New York City,2014,1,New York City,1,
+Citywide,New York City,2013,4,New York City,1,
+Citywide,New York City,2012,5,New York City,1,
+Citywide,New York City,2011,2,New York City,1,
+Citywide,New York City,2010,5,New York City,1,
+Citywide,New York City,2010,5,New York City,1,
+Citywide,New York City,2009,1,New York City,1,
+Citywide,New York City,2009,1,New York City,1,
+Citywide,New York City,2008,2,New York City,1,
+Citywide,New York City,2008,2,New York City,1,
+Citywide,New York City,2007,3,New York City,1,
+Citywide,New York City,2007,3,New York City,1,
+Citywide,New York City,2006,3,New York City,1,
+Citywide,New York City,2006,3,New York City,1,
+Citywide,New York City,2005,4,New York City,1,
+Citywide,New York City,2005,4,New York City,1,
+Citywide,New York City,2004,0,New York City,1,
+Citywide,New York City,2004,0,New York City,1,
+Citywide,New York City,2003,2,New York City,1,
+Citywide,New York City,2003,2,New York City,1,
+Citywide,New York City,2002,6,New York City,1,
+Citywide,New York City,2002,6,New York City,1,
+Citywide,New York City,2001,2,New York City,1,
+Citywide,New York City,2001,2,New York City,1,
+Citywide,New York City,2000,1,New York City,1,
+Citywide,New York City,2000,1,New York City,1,
+
+NYC Department of Health and Mental Hygiene
+Environment & Health Data Portal
+More information can be found at: http://nyc.gov/health/tracking
+Accessed 06/30/2017

@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"HPC125WBESP100-10028-stdout-1502291536543.txt","computername":"HPC125WBESP100","pid":10028,"type":"stdout","created":1502291536543},{"file":"HPC125WBESP100-11280-stdout-1502297720290.txt","computername":"HPC125WBESP100","pid":11280,"type":"stdout","created":1502297720290},{"file":"HPC125WBESP100-11492-stdout-1502291055731.txt","computername":"HPC125WBESP100","pid":11492,"type":"stdout","created":1502291055731},{"file":"HPC125WBESP100-13508-stdout-1502291569471.txt","computername":"HPC125WBESP100","pid":13508,"type":"stdout","created":1502291569471},{"file":"HPC125WBESP100-13940-stdout-1502290733467.txt","computername":"HPC125WBESP100","pid":13940,"type":"stdout","created":1502290733467},{"file":"HPC125WBESP100-14452-stdout-1502291387239.txt","computername":"HPC125WBESP100","pid":14452,"type":"stdout","created":1502291387239},{"file":"HPC125WBESP100-15048-stdout-1502296493863.txt","computername":"HPC125WBESP100","pid":15048,"type":"stdout","created":1502296493863},{"file":"HPC125WBESP100-15176-stdout-1502297574698.txt","computername":"HPC125WBESP100","pid":15176,"type":"stdout","created":1502297574698},{"file":"HPC125WBESP100-17476-stdout-1502291901176.txt","computername":"HPC125WBESP100","pid":17476,"type":"stdout","created":1502291901176},{"file":"HPC125WBESP100-18588-stdout-1502290869909.txt","computername":"HPC125WBESP100","pid":18588,"type":"stdout","created":1502290869909},{"file":"HPC125WBESP100-18640-stdout-1502296467047.txt","computername":"HPC125WBESP100","pid":18640,"type":"stdout","created":1502296467047},{"file":"HPC125WBESP100-18728-stdout-1502297049807.txt","computername":"HPC125WBESP100","pid":18728,"type":"stdout","created":1502297049807},{"file":"HPC125WBESP100-18924-stdout-1502291409423.txt","computername":"HPC125WBESP100","pid":18924,"type":"stdout","created":1502291409423},{"file":"HPC125WBESP100-19140-stdout-1502297466100.txt","computername":"HPC125WBESP100","pid":19140,"type":"stdout","created":1502297466100},{"file":"HPC125WBESP100-20324-stdout-1502297011703.txt","computername":"HPC125WBESP100","pid":20324,"type":"stdout","created":1502297011703},{"file":"HPC125WBESP100-3564-stdout-1502291931533.txt","computername":"HPC125WBESP100","pid":3564,"type":"stdout","created":1502291931533},{"file":"HPC125WBESP100-5348-stdout-1502291154764.txt","computername":"HPC125WBESP100","pid":5348,"type":"stdout","created":1502291154764},{"file":"HPC125WBESP100-5520-stdout-1502291044952.txt","computername":"HPC125WBESP100","pid":5520,"type":"stdout","created":1502291044952},{"file":"HPC125WBESP100-6200-stdout-1502297532769.txt","computername":"HPC125WBESP100","pid":6200,"type":"stdout","created":1502297532769},{"file":"HPC125WBESP100-8084-stdout-1502289774699.txt","computername":"HPC125WBESP100","pid":8084,"type":"stdout","created":1502289774699},{"file":"HPC125WBESP100-9204-stdout-1502291890002.txt","computername":"HPC125WBESP100","pid":9204,"type":"stdout","created":1502291890002}];
+        var lastUpdated = 1502297721107;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

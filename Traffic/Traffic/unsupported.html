@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsupported</title>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- bootstrap select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+body {
+    font-family: 'EB Garamond', serif;
+    background: black;
+}
+h1 {
+    color: white;
+    margin-top: 40vh;
+}
+h4 {
+    color: white;
+}
+.unsupported {
+    background: black;
+    text-align: center;
+}
+/*.unsupportedText h1, .unsupportedText h4 {
+    color: white;
+}
+*/
+.unsupported a {
+    color: #c92b2b !important;
+    margin-top: 20px;
+}
+.particles {
+    fill: white;
+    stroke: none;
+    opacity: 0.5;
+}
+</style>
+       
+</head>
+
+<body>
+<!-- DOHMH navbar -->       
+<nav class="navbar navbar-inverse navbar-dohmh">
+        <!-- Hamberger -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="www.nyc.gov/health" target="_blank"></a>
+        </div>
+
+        <!-- Navbar menu items -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www1.nyc.gov/" target="_blank">NYC.GOV</a></li>
+            <li><a href="http://www1.nyc.gov/311/" target="_blank">311</a></li>
+            <li><a href="http://www1.nyc.gov/office-of-the-mayor/" target="_blank">Office of the Mayor</a></li>   
+          </ul>
+        </div><!-- /.navbar-collapse -->
+</nav>
+
+
+<div class="container-fluid">
+    <section class="unsupported">
+        <h1>This site is not supported by Internet Explorer.</h1><br />
+        <h4>Please use Google Chrome for best performance.<br />
+         <a href='/IndicatorPublic/Traffic/unsupported.html'>http://a816-dohbesp.nyc.gov/IndicatorPublic/Traffic</a></h4>
+
+
+
+    </section>
+</div>
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<!-- <script>
+var w = 1400,
+h = 1000;
+    
+var svg = d3.select(".unsupported").append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+
+var circle = svg.selectAll("circle")
+    .data(d3.range(200).map(function() {
+        return {
+            x: w * Math.random(),
+            y: h * Math.random(),
+            dx: Math.random() - 0.5,
+            dy: Math.random() - 0.5
+        };
+    }))
+    .enter().append("circle")
+    .attr("r", function(d) { return Math.floor((Math.random() * 5) + 1); })
+    .attr("class", "particles");
+
+d3.timer(function() {
+    circle
+        .attr("cx", function(d) { d.x += d.dx; if (d.x > w) d.x -= w; else if (d.x < 0) d.x += w; return d.x; })
+        .attr("cy", function(d) { d.y += d.dy; if (d.y > h) d.y -= h; else if (d.y < 0) d.y += h; return d.y; });
+});
+
+var textDiv = d3.select(".unsupported").append("div");
+var text = textDiv.append("html")
+    .attr("class", "unsupportedText")
+    .style("margin-top", "-900px")
+    .html("<h1>This page is not supported by Internet Explorer.</h1><br />\
+        <h4>Please use Google Chrome for best performance.<br />\
+         <a href='http://bl.ocks.org/Kaz-A/raw/9152e844e6e3f91f2cf4002b12ba14c9/' target='_blank'>http://bl.ocks.org/Kaz-A/raw/9152e844e6e3f91f2cf4002b12ba14c9/</a></h4>")
+    .style("color", "white");
+
+</script> -->
+      
+</body>

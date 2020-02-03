@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> 
+.heatEventsLine, .heatDeathsLine {  
+  fill: none;
+  stroke-width: 1px;
+}
+
+.heatEventsLine{
+  stroke: steelblue;
+}
+
+.heatDeathsLine {
+  stroke: red;
+}
+
+.heatDeathsLine line, .heatDeathsLine path, .heatEventsLine line, .heatEventsLine path, .year line, .year path {
+    stroke: black;
+    stroke-width: 0.5px;
+}
+
+.heatDeathsLine text, .heatEventsLine text{  
+    font-size: 7px;
+    stroke: none;
+}
+
+.year text{
+    font-size: 6px;
+    stroke: none;
+}
+
+.heatDeathsLine text{
+  fill: red;
+}  
+
+.heatEventsLine text{
+  fill: steelblue;
+}
+
+
+</style>
+<body>
+
+<div id="graph2"></div>
+
+<!-- load the d3.js library -->    	
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// GRAPH 2: HEAT EVENTS VS HEAT DEATHS
+var graph2 = d3.select("#graph2").html("Heat events vs heat deaths");
+
+const heatEventsDeathsData = "data/heat_events_and_heat_deaths.csv";
+var margin = {top: 30, right: 40, bottom: 30, left: 40},
+    // width = 350 - margin.left - margin.right,
+    width = graph2.node().clientWidth - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var x = d3.scaleTime().range([0, width]);
+var y0 = d3.scaleLinear().range([height, 0]);
+var y1 = d3.scaleLinear().range([height, 0]);
+  
+var svg2 = d3.select("#graph2")
+       .append("svg")
+         .attr("width", width + margin.left + margin.right)
+         .attr("height", height + margin.top + margin.bottom)
+       .append("g")
+         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var parseTime = d3.timeParse("%Y");
+
+var heatEventsDeaths = d3.csv(heatEventsDeathsData, function(err, data) {
+ if(err) throw err;
+   // console.log(data);
+   data.forEach(function(d){
+     d.year = parseTime(d.year);
+     d.heat_events = +d.heat_events;
+     d.heat_deaths = +d.heat_deaths;
+   });
+
+   var heatEventsLine = d3.line()
+     .x(function(d) { return x(d.year); })
+     .y(function(d) { return y0(d.heat_events); });
+      
+ var heatDeathsLine = d3.line()
+     .x(function(d) { return x(d.year); })
+     .y(function(d) { return y1(d.heat_deaths); })
+     .defined(function(d) { return d.heat_deaths; }); // ignore null values
+      
+    x.domain(d3.extent(data, function(d) { return d.year; }));
+    y0.domain([0, d3.max(data, function(d) { return d.heat_events; })]); 
+    y1.domain([0, d3.max(data, function(d) { return d.heat_deaths; })]);
+    
+    var y0Line = svg2.append("path")
+       .data([data])
+       .attr("class", "heatEventsLine")
+       .attr("d", heatEventsLine);
+
+    var y1Line = svg2.append("path")
+       .data([data])
+       .attr("class", "heatDeathsLine")
+       .attr("d", heatDeathsLine);
+
+   var xAxis = svg2.append("g")
+       .attr("transform", "translate(0," + height + ")")
+       .attr("class", "year")
+       .call(d3.axisBottom(x)
+         .tickSizeInner(0)
+         .tickPadding(6)
+         .tickSize(3, 0));
+
+ var y0Axis = svg2.append("g")
+     .attr("class", "heatEventsLine")
+   .call(d3.axisLeft(y0)
+         .ticks(5)
+         .tickSizeInner(0)
+         .tickPadding(6)
+         .tickSize(3, 0))
+   .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", "0.5em")
+        .attr("text-anchor", "end")
+        .text("Heat Events (days)");
+
+   var y1Axis = svg2.append("g")
+       .attr("class", "heatDeathsLine")
+       .attr("transform", "translate( " + width + ", 0 )")
+       .call(d3.axisRight(y1)
+         .tickSizeInner(0)
+         .tickPadding(6)
+         .tickSize(3, 0))
+   .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 18)
+        .attr("dy", "-1.5em")
+        .attr("text-anchor", "end")
+        .text("Heat Deaths");
+
+    // resize chart
+ d3.select(window).on("resize", resizeHandler);
+   function resizeHandler() {
+     width = graph2.node().clientWidth - margin.left - margin.right;
+     x.range([0, width]);
+     x.call(xAxis);
+     y0Line.attr("path", function(d) { return x(d.year); });
+     y1Line.attr("path", function(d) { return x(d.year); });
+   }
+  
+
+});
+
+
+
+
+</script>
+</body>

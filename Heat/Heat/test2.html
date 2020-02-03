@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> 
+
+</style>
+<body>
+
+<div id="graph1"></div>
+
+<!-- load the d3.js library -->    	
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.0/topojson.min.js"></script>
+<script>
+
+
+// GRAPH 1: HOUSEHOLD WITH AC
+const veryLow = "#ddf2ee", low = "#bde5de", medium = "#8cd3c9", high = "#2db5a8", veryHigh = "#1b9385";  
+
+var tooltip = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
+var graph1 = d3.select("#graph1").html("Household reporting air conditioning vs neighborhood poverty, 2009-2013");
+
+const acData = "data/household_ac_projected.json";
+
+var margin = {top: 30, right: 40, bottom: 30, left: 40},
+    width = graph1.node().clientWidth - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+const svg1 = d3.select("#graph1")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+const projection = d3.geoMercator()
+    .center([-73.94, 40.70])
+    .scale(30000)
+    .translate([(width) / 2, (height) / 2]);
+
+const path = d3.geoPath().projection(projection);     
+
+
+var ac = d3.json(acData, function(err, data) {
+   if(err) throw err;
+
+   const acFeatures = topojson.feature(data, data.objects.household_ac_projected).features;
+   // console.log(acFeatures);
+
+   acFeatures.forEach(function(d){
+     d.value = +d.properties.data_value;
+     d.subBoroId = +d.properties.SubboroID;
+     d.subBoroName = d.properties.SubboroNam;
+     d.notes = d.properties.notes;
+   });
+    
+   const min = d3.min(acFeatures, function(d) { return d.value; });
+   const max = d3.max(acFeatures, function(d) { return d.value; });
+
+   svg1.append("g")
+     .attr("class", "g-ac")
+     .selectAll("path")
+     .data(acFeatures)
+     .enter()
+     .append("path")
+     .attr("class", "ac")
+     .attr("d", path)
+     .style("stroke", "white")   
+     .style("fill", function(d){
+         return d.value == 0 ? "#ccc" : d.value < 70 ? low : d.value < 80 ? medium : d.value < 90 ? high : veryHigh; 
+     })
+     .style("cursor", "pointer")
+       .on("mouseover", function(d,i){
+            tooltip.style("opacity", 0.8)
+             .style("left", (d3.event.pageX)+0 + "px") 
+             .style("top", (d3.event.pageY)-0 + "px")
+             .style("display", "inline-block");
+            tooltip.html(d.subBoroName + "<br/>" + d.value + "%");
+        })
+        .on("mouseout", function(d){ tooltip.style("display", "none"); });
+    
+});
+
+const legend1 = svg1.append("svg").attr("class", "legend1");
+const legendData1 = [
+        { name: "< 70%", color: low },
+        { name: "< 80%", color: medium },
+        { name: "< 90%", color: high },
+        { name: "> 90%", color: veryHigh }
+    ];
+
+var legendBox1 = legend1.selectAll("rect")
+    .data(legendData1)
+    .enter()
+    .append("g")
+    .append("rect")
+    .attr("height", 14)
+    .attr("width", 14)
+    .attr("y", function (d, i) { return (i+1) * 18; })            
+    .attr("x", 0)
+    .attr("class", "legendBox1")
+    .style("fill", function(d) { return d.color; });
+
+var legendLabel1 = legend1.selectAll("text")
+    .data(legendData1)
+    .enter()                        
+    .append("text")
+    .attr("y", function (d, i) { return (i+1) * 18; })
+    .attr("x", 20)
+    .attr("dy", ".70em")
+    .attr("class", "legendLabel1")
+    .html(function(d) { return d.name; }); 
+
+
+
+
+
+
+</script>
+</body>

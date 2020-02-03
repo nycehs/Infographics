@@ -1,0 +1,35 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 446 612" enable-background="new 0 0 446 612" xml:space="preserve">
+<g id="labels">
+	<text transform="matrix(1 0 0 1 375.9559 153)" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">Stroke</text>
+	<text transform="matrix(1 0 0 1 264.8471 570.6496)"><tspan x="0" y="0" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">Cardiovascular </tspan><tspan x="0" y="14.4" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">disease</tspan></text>
+	<g>
+		<text transform="matrix(1 0 0 1 57.488 283)"><tspan x="0" y="0" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">Asthma </tspan><tspan x="-25.356" y="14.4" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">exacerbation</tspan></text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 40.0684 398.0245)" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">Cancer</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 360.6672 276.1249)"><tspan x="0" y="0" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">Lung disease </tspan><tspan x="0" y="14.4" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">+ reduced </tspan><tspan x="0" y="28.8" fill="#C92B2B" font-family="'EB Garamond', serif" font-size="14">lung function</tspan></text>
+	</g>
+	<line id="head_x5F_label" fill="#C92B2B" stroke="#C92B2B" stroke-width="2px" stroke-miterlimit="10" x1="304.196" y1="150" x2="374" y2="150"/>
+	
+		<line id="heart_x5F_label" fill="none" stroke="#C92B2B" stroke-width="2px" stroke-miterlimit="10" x1="228.542" y1="491" x2="263.015" y2="557.214"/>
+	<circle id="head_x5F_bubble" fill="#C92B2B" cx="304.196" cy="150" r="2.96"/>
+	<circle id="heart_x5F_bubble" fill="#C92B2B" cx="228.542" cy="491" r="2.96"/>
+	<circle id="heart_x5F_bubble_1_" fill="#C92B2B" cx="277.335" cy="357.375" r="2.96"/>
+	<circle id="heart_x5F_bubble_2_" fill="#C92B2B" cx="168.184" cy="357.375" r="2.96"/>
+	<circle id="heart_x5F_bubble_3_" fill="#C92B2B" cx="118.059" cy="410.958" r="2.96"/>
+	
+		<line id="lung_x5F_label" fill="#C92B2B" stroke="#C92B2B" stroke-width="2px" stroke-miterlimit="10" x1="277.335" y1="357.375" x2="351.785" y2="288.125"/>
+	
+		<line id="asthma_x5F_label" fill="#C92B2B" stroke="#C92B2B" stroke-width="2px" stroke-miterlimit="10" x1="103.976" y1="300.544" x2="168.914" y2="357.375"/>
+	
+		<line id="cancer_x5F_label" fill="#C92B2B" stroke="#C92B2B" stroke-width="2px" stroke-miterlimit="10" x1="83.825" y1="395.799" x2="118.059" y2="410.958"/>
+</g>
+<g id="Layer_4">
+</g>
+</svg>

@@ -1,0 +1,420 @@
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.intro {
+  /*background: linear-gradient(45deg, @correct, #ffff4b);*/
+  background: #2db5a8;
+  color: #efef14;
+  height: 90vh;
+  margin-bottom: 100px;
+}
+.intro_text {
+  padding-top: 50px;
+}
+.title,
+.subtitle {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+.subtitle > h4 {
+  color: #162672;
+  width: 50%;
+  margin: 0 auto;  
+}
+.start2 {
+  color: #e55d53;
+  font-weight: bold;
+  cursor: pointer;
+}
+.title > h2 > span {
+  font-family: 'Special Elite', cursive;
+  /*color: @incorrect;*/
+  font-size: 40px;
+  font-weight: bold;
+}
+.ac > img {
+  margin: 0 auto;
+  display: block;
+  padding: 5%;
+  position: relative;
+  z-index: 2;
+  max-width: 70%;
+  max-height: 70%;
+  height: auto;
+}
+.start {
+  height: 60px;
+  width: 60px;
+  border: 1px black solid;
+  border-radius: 10px;
+  text-align: center;
+  background: #e55d53;
+  color: #fff;
+  position: relative;
+  top: -185px;
+  left: 24.1%;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 3;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+a.navbar-brand {
+  background-image: url("../images/dohmh_logo.png");
+  background-size: cover;
+  width: 50px;
+  margin-left: 20px;
+}
+.navbar_dohmh {
+  background: black;
+}
+.navbar {
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+}
+.q {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  padding: 20px 0;
+}
+.instanceDiv {
+  margin-bottom: 200px;
+}
+.questionNum {
+  color: grey;
+}
+.question {
+  font-size: 24px;
+}
+.answers {
+  padding: 20px;
+  border-bottom: 1px #ccc solid;
+  background: #fff;
+  cursor: pointer;
+}
+.hovered {
+  padding: 20px;
+  border-bottom: 1px #ccc solid;
+  background: #ccc;
+  color: #fff;
+}
+.correct {
+  padding: 20px;
+  border-bottom: 1px #ccc solid;
+  background: #2db5a8;
+  color: #fff;
+}
+.incorrect {
+  padding: 20px;
+  border-bottom: 1px #ccc solid;
+  background: #e55d53;
+  color: #fff;
+}
+.deactivate {
+  pointer-events: none;
+}
+.desc {
+  padding: 20px;
+}
+.graph {
+  padding: 10px;
+  /*background: #ccc;*/
+  /*margin-bottom: 30px;*/
+  /*margin-top: 40px;*/
+}
+.note {
+  margin-bottom: 100px;
+  color: #2db5a8;
+}
+#graph2 {
+  background: url("../images/deaths.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  margin-top: 20px;
+}
+.graph1Img {
+  background-image: url("../images/disparities.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 320px;
+  width: 100%;
+}
+.graph3Img {
+  background-image: url("../images/adults65.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 320px;
+  width: 100%;
+}
+.graph4Img {
+  background-image: url("../images/hvi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 320px;
+  width: 100%;
+}
+.graph5Img {
+  background-image: url("../images/buddy.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 320px;
+  width: 100%;
+}
+#graph5 > p > span {
+  font-size: 24px;
+  color: #2db5a8;
+}
+.fa-check,
+.fa-times {
+  color: #fff;
+}
+.desc {
+  color: #2db5a8;
+}
+footer,
+.score {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+footer {
+  background: linear-gradient(0deg, #2db5a8, #efef14);
+  /*background: @correct;*/
+  color: #000;
+}
+.score {
+  background: #efef14;
+  padding: 10%;
+  color: #162672;
+}
+.your-score {
+  font-size: 80px;
+}
+.message {
+  font-size: 16px;
+}
+.message > span {
+  font-size: 32px;
+}
+.footnote {
+  margin: 20% 0 10% 0;
+}
+.links {
+  margin: 10% 0 10% 0;
+}
+.footnote > h1 {
+  color: #e55d53;
+}
+.footnote > p {
+  color: #162672;
+}
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+.links > ul > li > a {
+  font-size: 14px;
+  color: #162672;
+  text-decoration: underline;
+}
+.links > ul > li > a:hover {
+  color: #e55d53;
+  font-size: 14px;
+}
+.social {
+  padding-bottom: 100px;
+}
+.social > h4 {
+  color: #fff;
+}
+.social > a {
+  color: #fff;
+  font-size: 24px;
+}
+.social > a:hover {
+  color: #e55d53;
+}
+.heatEventsLine,
+.heatDeathsLine,
+.heatHospLine {
+  fill: none;
+  stroke-width: 1px;
+}
+.heatEventsLine {
+  stroke: #e55d53;
+}
+.heatDeathsLine,
+.heatHospLine {
+  stroke: #2db5a8;
+}
+.heatHospLine line,
+.heatHospLine path,
+.heatDeathsLine line,
+.heatDeathsLine path,
+.heatEventsLine line,
+.heatEventsLine path,
+.year line,
+.year path {
+  stroke: black;
+  stroke-width: 0.5px;
+  /*shape-rendering: crispEdges;*/
+}
+.heatHospLine text,
+.heatDeathsLine text,
+.heatEventsLine text {
+  font-family: 'Muli', sans-serif;
+  /*font-size: @size - 2;*/
+  stroke: none;
+}
+.year text {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  stroke: none;
+}
+.tick > text {
+  font-size: 16px;
+}
+.poverty text {
+  font-family: 'Muli', sans-serif;
+  stroke: none;
+}
+.heatDeathsLine text,
+.heatHospLine text {
+  fill: #2db5a8;
+}
+.heatEventsLine text {
+  fill: #e55d53;
+}
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: #0a2538;
+  border: #0a2538 1px solid;
+  border-radius: 0px;
+  pointer-events: none;
+  color: white;
+}
+/* large screens */
+/* do other large screens media queries for start buttons (copy .ac > img) */
+@media (min-width: 1200px) {
+  .subtitle > h4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ac > img {
+    max-width: 50%;
+  }
+  .start {
+    height: 60px;
+    width: 60px;
+    top: -181px;
+    left: 32.3%;
+  }
+}
+/* mobile */
+/* ...how can I avoid repeating the .ac and .intro classes?? */
+@media (max-width: 414px) {
+  .subtitle > h4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ac > img {
+    max-width: 100%;
+  }
+  .intro {
+    height: 100vh;
+  }
+  .start {
+    height: 35px;
+    width: 35px;
+    top: -91px;
+    left: 10.9%;
+    font-size: 10px;
+    line-height: 35px;
+    border-radius: 0;
+    border: 0px black solid;
+  }
+  .year text,
+  .heatDeathsLine text,
+  .heatEventsLine text {
+    font-size: 8px;
+  }
+  #graph2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .subtitle > h4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ac > img {
+    max-width: 100%;
+  }
+  .intro {
+    height: 100vh;
+  }
+  .start {
+    height: 35px;
+    width: 35px;
+    top: -85px;
+    left: 10.3%;
+    font-size: 10px;
+    line-height: 35px;
+    border-radius: 0;
+    border: 0px black solid;
+  }
+  .year text,
+  .heatDeathsLine text,
+  .heatEventsLine text {
+    font-size: 8px;
+  }
+  #graph2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 320px) {
+  .subtitle > h4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ac > img {
+    max-width: 100%;
+  }
+  .intro {
+    height: 100vh;
+  }
+  .start {
+    height: 31px;
+    width: 31px;
+    top: -73px;
+    left: 10.3%;
+    font-size: 10px;
+    line-height: 31px;
+    border-radius: 0;
+    border: 0px black solid;
+  }
+  .year text,
+  .heatDeathsLine text,
+  .heatEventsLine text {
+    font-size: 8px;
+  }
+  #graph2 {
+    margin-top: 0;
+  }
+}

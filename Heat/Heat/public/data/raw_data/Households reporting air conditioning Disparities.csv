@@ -1,0 +1,19 @@
+,,,,,Households reporting air conditioning : Disparities
+How Median Calculated:, Within each disparity grouping of neighborhoods, the median is determined as the point at which half the neighborhood data values are lower and half are higher 
+X Axis Title: Neighborhood Poverty (subborough)
+Y Axis Title: Percent of Households  (Median of Neighborhoods)
+Indicator Name: Households reporting air conditioning
+Indicator Measure: Percent of Households
+Indicator How Calculated: Estimated number of households in an area reporting having functioning air conditioning divided by the number of households in the area; expressed as percent.
+Indicator Source(s): New York City Housing and Vacancy Survey (HVS)
+Linked Indicator Name: Neighborhood Poverty
+Linked Indicator How Calculated: Neighborhoods are ranked according to the percent of people whose annual income falls below 100% of the federal poverty level. Rankings are then divided into 3 approximately equal groupings of low medium and high poverty. 
+Linked Indicator Source(s): American Community Survey
+
+Year,High,Low,Medium,
+2014,81.7,93.7,88,
+
+NYC Department of Health and Mental Hygiene
+Environment & Health Data Portal
+More information can be found at: http://nyc.gov/health/tracking
+Accessed 07/27/2017
