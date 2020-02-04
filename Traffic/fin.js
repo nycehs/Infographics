@@ -71,9 +71,9 @@
         .attr("class", "col-xs-12 col-md-12")
         .append("text").html("SHARE: ")
        // .append("text").html("<a class='btn btn-social-icon btn-google-plus' href='http://google.com/+'><i class='fa fa-google-plus'></i></a>")
-        .append("text").html("<a class='btn btn-social-icon btn-facebook' href='http://www.facebook.com/share.php?u=http://a816-dohbesp.nyc.gov/IndicatorPublic/traffic'><i class='fa fa-facebook'></i></a>")
-        .append("text").html("<a class='btn btn-social-icon btn-linkedin' href='http://www.linkedin.com/shareArticle?mini=true&url=http://a816-dohbesp.nyc.gov/IndicatorPublic/Traffic&title=Traffic%20in%20NYC' ><i class='fa fa-linkedin'></i></a>")
-        .append("text").html("<a class='btn btn-social-icon btn-twitter' href='https://publish.twitter.com/oembed?url=http://a816-dohbesp.nyc.gov/IndicatorPublic/traffic'><i class='fa fa-twitter'></i></a>")
+        .append("text").html("<a class='btn btn-social-icon' href='http://www.facebook.com/share.php?u=http://a816-dohbesp.nyc.gov/IndicatorPublic/traffic'><i class='fab fa-facebook'></i></a>")
+        .append("text").html("<a class='btn btn-social-icon btn-linkedin' href='http://www.linkedin.com/shareArticle?mini=true&url=http://a816-dohbesp.nyc.gov/IndicatorPublic/Traffic&title=Traffic%20in%20NYC' ><i class='fab fa-linkedin'></i></a>")
+        .append("text").html("<a class='btn btn-social-icon btn-twitter' href='https://publish.twitter.com/oembed?url=http://a816-dohbesp.nyc.gov/IndicatorPublic/traffic'><i class='fab fa-twitter'></i></a>")
         .append("text").html("<a class='btn btn-social-icon' href='mailto:?body=http://a816-dohbesp.nyc.gov/IndicatorPublic/Traffic'><i class='fa fa-envelope-o'></i></a>")
         ;
 
