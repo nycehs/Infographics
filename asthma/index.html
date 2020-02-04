@@ -1,46 +1,43 @@
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en" dir="ltr">
+
 <head>
-    <title>Asthma & Housing Infographic | EH Data Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="../EPHTjs/jquery-1.10.2.min.js"></script>
+
+    <title>Infographic Shell Template: EH Data Portal</title>
+
+    <!--
+    CSS is all hosted by the Core-Repo. Links will need to be updated for each project once merged or deployed.
+    This is also the case for main.js further below.
+    -->
+
+    <!--Fontawesome Icons-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
     <!--NYC Core Framework Theme-->
     <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/theme.css">
-    <!--Core Framework does have some conflicting styles.
-    Recall that style sheets are loaded sequentially; style sheets loaded later (closer to the content) 
-    take priority.-->
+    <!--Custom additions for Portal items-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href='css/bootstrap.min.css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <!--Custom data story CSS-->
+    <link rel="stylesheet" href="../css/datastories.css">
+
+    <!--legend icons CSS-->
     <link href="icons/fontcustom/fontcustom.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href='style.css'>
 
-
-
-    
-     <script type="text/javascript">
-         var _gaq = _gaq || [];
-         _gaq.push(['_setAccount', 'UA-28636785-1']);
-         _gaq.push(['_trackPageview']);
-
-         (function () {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
-         (function (i, s, o, g, r, a, m) {
-             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                 (i[r].q = i[r].q || []).push(arguments)
-             }, i[r].l = 1 * new Date(); a = s.createElement(o),
-           m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-   </script>
 </head>
+
+
+
+<body>
 
     <!-- For keyboard users -->
     <a class="sr-only sr-only-focusable skip-menu" href="#sidebar">Skip Header</a>
@@ -105,7 +102,7 @@
 
                     <div class="col border-top">
 
-                        <div class="align-items-center justify-content-between">
+                        <div class="align-items-center justify-content-between border-bottom">
 
                             <!-- Mobile Toggle Buttons -->
 
@@ -167,114 +164,458 @@
     <!-- #global-header -->
 
 
-<body>
+    <body>
+    <main role="main" style="background-color:#97b7b5">
 
-    <div class="container">
-        <header class="row">
-            <!-- TITLE -->
-            <div class="col-md-8">
-                <h1>BAD HOUSING CONDITIONS
-                    <br />
-                    CAN MAKE <span>ASTHMA</span> WORSE</h1>
+    <div class="container-fluid">
+        <div class="border-bottom pb-2">   
+            <div class="row">
+            <div class="col-lg-8">       
+            <h1>Bad housing conditions can make <span style="color: #c65238;">asthma</span> worse</h1>
+            <p>Environmental factors can trigger asthma - but while many people assume that "environmental factors" means outdoor air quality (pollution), the real danger may be lurking closer to home. <a class="bodylink" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=36">Housing conditions</a> are a common trigger for <a  class="bodylink" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">asthma</a>, disproportionately affecting children in low-income neighborhoods, leading to a severe health disparity. </p>
             </div>
-            <!-- BRAND -->
-            <div class="navbar-text navbar-right">
-                <div class="text">
-                    Are buildings in your
-                    <br />
-                    neighborhood well-maintained?
-                    <br />
-                    How does your
-                    <br />
-                    neighborhood compare?
-         
-                </div>
-                <div class="brand">
-                    <p>
-                        Find data on<br />
-                        <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/publictracking.aspx" target="_blank"><span class="brand_default">Environment<br />
-                            and Health<br />
-                        </span><span class="brand_light">Data Portal</span>
-                </div>
-        </header>
-        <!-- INFOGRAPHIC -->
-        <div class="content">
-            <div class="legend">
 
-                <div class="legend_icons">
-                    <div>
-                        <a class="btn btn-primary" id="cracks"><span class="icon-cracks"></span></a><br />
-                        <a id="cracks"><p class="legend_text">CRACKS</p> </a>
-                    </div>
-
-                    <div><p class="equation">+</p></div>
-
-                    <div>
-                        <a class="btn btn-primary" id="leaks"><span class="icon-leaks"></span></a><br />
-                        <a id="leaks"><p class="legend_text">LEAKS</p> </a>
-                    </div>
-
-                    <div><p class="equation">&rarr;</p></div>
-
-                    <div>
-                        <a class="btn btn-primary" id="roaches"><span class="icon-roaches"></span></a><br />
-                        <a id="roaches"><p class="legend_text">ROACHES</p> </a>
-                    </div>
-
-                    <div><p class="equation">&rarr;</p></div>
-
-                    <div class="legend_asthma">
-                        <a class="btn btn-primary" id="asthma"><span class="icon-asthma"></span></a><br />
-                        <a id="asthma"><p class="legend_text">KIDS' ASTHMA <br /> <span class="small">HOSPITALIZATIONS</span></p> </a>
-                    </div>
-                </div> <!-- /. legend_icons --> 
-
+            <div class="col-lg-4">
+                    <div class="card">
+                            <div class="card-header" style="background-color: #97b7b5">Related content:</div>
+                                <ul class="list-group list-group-flush" >
+                                  <li class="list-group-item" style="background-color: #97b7b5"><i class="fas fa-atlas"></i>&nbsp;<a  class="bodylink" href="">Why asthma is a social justice issue</a></li>
+                                  <li class="list-group-item" style="background-color: #97b7b5"><i class="fas fa-map-marked-alt"></i>&nbsp;<a  class="bodylink" href="">Housing & health neighborhood report</a></li>
+                                </ul>
+                              </div>
             </div>
-            <!-- /.legend  -->
+        </div> 
+
+
         </div>
-        <!-- /.content -->
 
-        <div class="share-button"></div>
 
-        <!-- FOOTER -->
-        <div class="footer">
-            <div class="footer_link">
-                <p>
-                    Learn More - visit <a href="http://www1.nyc.gov/site/doh/health/health-topics/healthy-home.page" target="_blank">NYC healthy homes</a>
+
+            <div class="content my-2 py-4 px-2 mb-2">
+                    <div class="legend">
+
+                            <div class="legend_icons">
+                                <div>
+                                    <a class="btn btn-primary" id="cracks"><span class="icon-cracks"></span></a><br />
+                                    <a id="cracks" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=40,719b87,36,Summarize"><p class="legend_text">CRACKS</p> </a>
+                                </div>
+            
+                                <div><p class="equation">+</p></div>
+            
+                                <div>
+                                    <a class="btn btn-primary" id="leaks"><span class="icon-leaks"></span></a><br />
+                                    <a id="leaks" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=42,719b87,36,Summarize"><p class="legend_text">LEAKS</p> </a>
+                                </div>
+            
+                                <div><p class="equation">&rarr;</p></div>
+            
+                                <div>
+                                    <a class="btn btn-primary" id="roaches"><span class="icon-roaches"></span></a><br />
+                                    <a id="roaches" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=107,719b87,8,Summarize"><p class="legend_text">ROACHES</p> </a>
+                                </div>
+            
+                                <div><p class="equation">&rarr;</p></div>
+            
+                                <div class="legend_asthma">
+                                    <a class="btn btn-primary" id="asthma"><span class="icon-asthma"></span></a><br />
+                                    <a id="asthma" href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2381,4466a0,11,Summarize"><p class="legend_text">KIDS' ASTHMA <br /> <span class="small">HOSPITALIZATIONS</span></p> </a>
+                                </div>
+                            </div> <!-- /. legend_icons --> 
+            
+                        </div>
+                        <!-- /.legend  -->
+           
             </div>
-            <div class="logo">
-                <img src="dohmh_logo.png" />
+           <div class="border-bottom">
+            <div class="row">
+
+                    <div class="col-lg-4 ml-auto">
+                        <p>To learn more, visit <a  class="bodylink" href="https://www1.nyc.gov/site/doh/health/health-topics/healthy-home.page">NYC Healthy Homes</a>.</p>
+                                  <br><br><br>
+                    </div>
+
+
             </div>
-        </div>
-        <!-- /.footer -->
-
-
+           </div>
     </div>
-    <!-- /.container -->
 
 
-    <script type="text/javascript" src="share.min.js"></script>
-    <script>
 
-        //Share button
-        new Share(".share-button", {
-            networks: {
-                facebook: {
-                    app_id: "abc123"
-                }
-            }
-        });
 
-        //Legend button links
-        $("a#cracks").attr("href", "http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=40,719b87,36,Summarize")
-        .attr('target', '_blank');
-        $("a#leaks").attr("href", "http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=42,719b87,36,Summarize")
-        .attr('target', '_blank');
-        $("a#roaches").attr("href", "http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=107,719b87,8,Summarize")
-        .attr('target', '_blank');
-        $("a#asthma").attr("href", "http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=85,4466a0,11,Summarize")
-        .attr('target', '_blank');
-    </script>
+
+
+
+<style>
+a.bodylink {
+    color: #c65238;
+    font-weight: 600;
+    
+}
+
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.content {
+	background: url("asthma.png") no-repeat;
+	background-size: contain;
+	height: 540px;
+    background-position: center;
+    background-color: #97b7b5;
+}
+
+#cracks {
+	background-color: #491f17;
+	border-color: #491f17;
+}
+
+#leaks {
+	background-color: #6d2b24;
+	border-color: #6d2b24;
+}
+
+#roaches {
+	background-color: #994433;
+	border-color: #994433;
+}
+
+#asthma {
+	background-color: #c65238;
+	border-color: #c65238;
+}
+
+.legend {
+	background: rgba(255, 255, 255, 0.3);
+	padding: 20px 0 20px 30px;
+	width: 50%;
+	border-radius: 15px;
+	height: 140px;
+}
+
+.legend_icons {
+	display: inline;
+}
+
+.legend_icons div {
+	width: 12%;
+	float: left;
+}
+
+.equation {
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.legend_text {
+	text-align: center;
+	font-weight: 400;
+	margin-top: 4px;
+	line-height: 14px;
+	color: black;
+	text-decoration: underline;
+}
+
+.legend_asthma {
+	width: 110px !important;
+	text-align: center
+}
+
+.icon-cracks, .icon-leaks, .icon-roaches, .icon-asthma {
+	font-size: 40px;
+	color: white;	
+}
+
+.btn {
+	font-weight: 300;
+	border-radius: 40px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.legend {
+		width: 100%;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.container {
+		padding: 2px;
+	}
+
+	.legend {		
+		padding: 20px 0 20px 30px;
+		width: 100%;
+		height: 90px;
+	}
+
+	#cracks, #leaks, #roaches, #asthma {
+		font-size: 50%;
+	}
+
+	.icon-leaks, .icon-cracks, .icon-roaches, .icon-asthma {
+		font-size: 18px;
+	}
+
+	.equation {
+		font-size: 70%;	
+	}
+
+	.legend_text {
+		font-size: 70%;	
+		line-height: 90%;
+	}
+
+	.legend_asthma {
+		width: 80px !important;
+	}
+
+	h1 {
+		font-size: 24px;
+		font-weight: 300;
+	}
+
+	.content {
+		height: 300px;
+		margin-top: 10%;
+	}
+
+</style>
+
+
+
+
+
+    </main>
+
+    <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+     
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+     
+                <div class="container py-3 d-none" id="languages">
+     
+                    <div class="row fs-md">
+     
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+     
+                </div>
+                <!-- #languages -->
+     
+                <div class="container py-3" id="languages">
+     
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+     
+                </div>
+                <!-- #languages -->
+     
+                <hr class="opacity-10" aria-hidden="true">
+     
+                <div class="container py-3">
+     
+                    <div class="row">
+     
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+     
+                            <nav class="row fs-md" role="navigation">
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                            </nav>
+     
+                        </div>
+                        <!-- .col -->
+     
+                        <div class="col-md-6 col-lg-4">
+     
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2" src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+     
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+     
+                        </div>
+                        <!-- .col -->
+     
+                    </div>
+                    <!-- .row -->
+     
+                </div>
+                <!-- .container -->
+     
+            </div>
+            <!-- #nyc-bottom-footer -->
+     
+        </footer>
 
 </body>
+    <!-- #content -->
+
+
+
+    <!-- jQuery (full, compressed version) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Popper.js and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Google Translate -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- NYC template JS (RTL, search and language toggle, back to top)  -->
+    <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
+
+
+
+</body>
+
 </html>
