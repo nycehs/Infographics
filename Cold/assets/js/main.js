@@ -105,6 +105,9 @@ $(window).on('load',function() {
             
         }
         $("<p style='position:absolute;top: -10000px;' role='alert'>A new scene has loaded.</p>").appendTo(document.body)
+        snow();
+        setTimeout(pause,2000);
+
 
     });
 })

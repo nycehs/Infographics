@@ -1,4 +1,6 @@
- (function() {
+var globalID;
+
+(function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
     function(callback) {
         window.setTimeout(callback, 1000 / 60);
@@ -14,7 +16,7 @@ var flakes = [],
     mX = -100,
     mY = -100
 
-    canvas.width = window.innerWidth;
+    canvas.width = window.innerWidth;   
     canvas.height = window.innerHeight;
 
 function snow() {
@@ -66,7 +68,8 @@ function snow() {
         ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
         ctx.fill();
     }
-    requestAnimationFrame(snow);
+   globalID = requestAnimationFrame(snow);
+   setTimeout(pause,2000);
 };
 
 function reset(flake) {
@@ -103,6 +106,9 @@ function init() {
     snow();
 };
 
+function pause(){
+    cancelAnimationFrame(globalID)
+};
 
 
 init();
